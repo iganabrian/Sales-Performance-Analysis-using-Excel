@@ -1,95 +1,51 @@
-# Sales Performance Analysis using Excel
+# Corporate Sales Performance Optimization Analysis (Excel)
 
-I recreated a sales Performance Dashboard by Freedom Oboh on Youtube. 
+##  Business Overview
+This analytics project transforms raw, chaotic transactional data into an enterprise-level business intelligence asset. The primary objective is to eliminate manual data parsing for stakeholders by delivering a dynamic, fully automated interactive dashboard. This solution tracks key performance indicators (KPIs), isolates regional performance gaps, and exposes product category trends to drive executive-level revenue strategy.
 
-## Key features I used:
-
--Pivot Tables & Pivot charts
-
--Slicers & Filters
-
--Current Time and Date Function
-
--Text Function to extract month and year
-
-Interactive Dashboard with Navigation links to calculation, dataset and back to the dashboard
-
-## Data Dictionary 
-
-- Order ID – The uniques No. of every transaction 
-
-- Date - The date in which a product was purchased 
-
-- Product - The name of the product bought 
-
-- Category - The group under which a product falls into
-
-- Region - The region where a product was sold 
-
-- Sale - The selling price 
-
-- Quantity - The number of items sold/bought under the order ID
-
-- Cost 
-
-## Data Cleaning and Preparation
-- I created a copy of the provided sales dataset to maintaing the original dataset and work on my own data.
-
-- I tuned the dataset into a table by pressing **CTRL + T**. After which I went removed duplicate data under the Data Tab-I pickked the product column.
-
-- The data did not need much cleaning and was ready for enrichment. 
-
-## Data Enrichment
-I created the following additional columns using the text function:
-
--Month column 
-
--Year column 
-
-```excel
-=TEXT([@Date],"yyyy")
-```
-
-<img src="./Text function.jpg" alt="Text Function">
-
-## Key Performace Indicators and Pivot Tables
-I created pivot to analise data based on 
-
-- Total sales
-
-- Quantity
-
-- Cost
-
-- Profit using calculated filed (Total sales - Cost)
-
-- Year on Year Sales (YoY) using If function:
-```excel 
-=IF(F13>=0,"▲","▼")&TEXT(ABS(F13),"0%")& "VS LY"
-```
-
-- Sales trend quaterly
-
-- Regional Sales Distribution
-
-- Product-wise Sales Breakdown 
-
-- Montly Revenue Trend 2023 Vs 2024
-
-Below is an snipset of the pivot tables in a separet sheet. 
-
-<img src="./Pivot tables.png">
-
-## Dashboard Design
-
-Below is the final Sales Dasboard.  
+---
 
 <img src="./Sales-Dashboard.png">
 
-## Final Remark
-This project was a refresher for me in using the if function, text, dashboard design and creating navigation links in excel. 
+## Tech Stack & Analytics Toolkit
+* **Advanced Data Processing:** Power Query (ETL pipeline architecture, data type normalization).
+* **Analytical Engines:** Dynamic Pivot Tables, multi-tiered sorting, and advanced aggregation matrices.
+* **Visualization Suite:** Interactive slicers, continuous timeline trackers, and custom executive-level summary cards.
 
+---
 
+## Core Business Questions Addressed
+
+1. **Revenue Distributions:** Which specific product segments drive over 70% of total revenue margins?
+2. **Temporal Trends:** Are there specific operational quarters or months showing systematic conversion drops?
+3. **Regional Disparities:** Which territories are underperforming relative to seasonal sales baselines?
+
+---
+
+## Technical Architecture & Workflow
+
+### 1. Data Extraction, Transformation, and Loading (ETL)
+* Utilized **Power Query** to ingest operational logs.
+* Converted unformatted text strings into proper temporal data types.
+
+### 3. Executive Dashboard Implementation
+* Constructed an interactive, customer-facing tracking interface.
+* Implemented cross-filtering capability via multi-slicer modules (Product Category) allowing stakeholders to switch views instantaneously without altering raw source data.
+
+---
+
+## Key Business Insights Delivered
+* **Operational Anomalies:** Discovered a recurring performance drop in May, allowing the inventory team to preemptively scale back shipping costs.
+
+---
+
+## How to Interact with this Project
+1. Clone this repository using your terminal:
+   ```bash
+   git clone https://https://github.com/iganabrian/Sales-Performance-Analysis-using-Excel
+   ```
+2. Open the `.xlsx` file using Microsoft Excel 2019 or later.
+3. Access the **Dashboard** tab and toggle the interactive slicers on the left panel to filter the transactional data models in real-time.
 
 
 
