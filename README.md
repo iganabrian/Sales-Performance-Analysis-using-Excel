@@ -16,7 +16,7 @@ This analytics project transforms raw, chaotic transactional data into an enterp
 
 ## Core Business Questions Addressed
 
-1. **Revenue Distributions:** Which specific product segments drive over 70% of total revenue margins?
+1. **Revenue Distributions:** Which specific product segments drive highest total revenue margins?
 2. **Temporal Trends:** Are there specific operational quarters or months showing systematic conversion drops?
 3. **Regional Disparities:** Which territories are underperforming relative to seasonal sales baselines?
 
